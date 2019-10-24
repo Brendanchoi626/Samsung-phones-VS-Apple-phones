@@ -1,0 +1,29 @@
+/* Style the header */
+.Heading {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+
+.content{
+    content: "";
+    display: table;
+    clear: both;
+    background: whitesmoke;
+}
+.columnside{
+    width: 20%
+}
+.colomnmiddle{
+    width: 60%
+}
+body{
+    margin: 0;
+}
+.columnside{
+    float: left;
+    width: 15%;
+    padding: 10px;
+}
+
+
