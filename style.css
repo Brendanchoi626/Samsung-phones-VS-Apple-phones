@@ -1,29 +1,116 @@
 /* Style the header */
 .Heading {
-    background-color: #f1f1f1;
+    background-color: grey;
     padding: 20px;
     text-align: center;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .heading{
+    background-color: grey;
+    padding: 20px;
+    text-align: left;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .topnav {
+    overflow: hidden;
+    grid-area: p;
+    text-align: center;
+    background-color: #333;
+
+  }
+  .topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /*index*/
+.item1 {grid-area: l;}
+.item2 {grid-area: m;}
+.item3 {grid-area: r;}
+.item4 {grid-area: h;text-align: center; background-color: grey;}
+.item5 {grid-area: bl;}
+.item6 {grid-area: br;background-color: white;}
+.item7 {grid-area: bl2;}
+.item8 {grid-area: br2;background-color: white;}
+.itemt {grid-area: t; text-align: center;}
+.item0 {grid-area: suj;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'l l m m m r r'
+    'l l m m m r r'
+    'l l m m m r r'
+    'l l m m m r r'
+    'l l t t t r r'
+    'h h h h h h h'
+    'bl bl bl br br br br'
+    'bl bl bl br br br br'
+    'bl2 bl2 bl2 br2 br2 br2 br2'
+    'bl2 bl2 bl2 br2 br2 br2 br2'
+    'p p p p p p p';
+    
+
+    grid-gap: 10px;
+    background-color: whitesmoke;
+    padding: 10px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+/*P&C*/
+.item9 {grid-area: i; background-color: white}
+.item10 {grid-area: s; background-color: white}
+.pandc {grid-area: T; text-align: center; padding: 14px 16px; background-color: white}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    'T T T T T T'
+    'i i i s s s';
+    grid-gap: 10px;
+    background-color: whitesmoke;
+    padding: 10px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-.content{
-    content: "";
-    display: table;
-    clear: both;
-    background: whitesmoke;
+.compare{
+  grid-gap: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
-.columnside{
-    width: 20%
-}
-.colomnmiddle{
-    width: 60%
-}
-body{
-    margin: 0;
-}
-.columnside{
-    float: left;
-    width: 15%;
-    padding: 10px;
+
+.texts{
+  margin: 10px;
+  background-color: white;
 }
 
 
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*
+    max-width: 100%;
+    min-width: 70%;
+    max-height: 100%;
+    min-height: 70%;
+    */
+
+}
