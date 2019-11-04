@@ -27,7 +27,6 @@ body{
   .topnav {
     overflow: hidden;
     grid-area: p;
-    text-align: center;
     background-color: #333;
 
   }
@@ -36,7 +35,8 @@ body{
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; 
+    text-decoration: none;
+    float: left;
   }
   
   /* Change color on hover */
@@ -56,6 +56,22 @@ overflow: auto;}
 .item8 {grid-area: br2;background-color: white;}
 .itemt {grid-area: t; text-align: center;}
 .item0 {grid-area: suj;}
+.summary {grid-area: sum; text-align: left;max-width:80% ;
+  margin-left: 10%;}
+.item15 {grid-area: i; max-width:80%; margin-right: auto;
+  margin-left: auto;}
+  .other {grid-area: o; text-align: left;max-width:80%;;
+    margin-left: 10%;}
+.iphone-11{grid-area : ip11; margin-right: auto;
+  margin-left: auto;  max-width:80%;}
+.iphone-Xr{grid-area: ipxr; margin-right: auto;
+  margin-left: auto;  max-width:80%;}
+.iphone-8{grid-area:ip8; margin-right: auto;
+  margin-left: auto;  max-width:80%;}
+.Galaxy-s10e{grid-area: s10e; margin-right: auto;
+  margin-left: auto; max-width:80%;}
+.Galaxy-A50{grid-area:A50; margin-right: auto;
+  margin-left: auto; max-width:80%;}
 
 .grid-container {
     display: grid;
@@ -65,11 +81,20 @@ overflow: auto;}
     'l l m m m r r'
     'l l t t t r r'
     'h h h h h h h'
+    'p p p p p p p'
     'bl bl bl br br br br'
     'bl bl bl br br br br'
     'bl2 bl2 bl2 br2 br2 br2 br2'
     'bl2 bl2 bl2 br2 br2 br2 br2'
-    'p p p p p p p';
+    'sum sum sum sum sum sum sum'
+    'i i i i i i i'
+    'o o o o o o o'
+    'ip11 ip11 ip11 ip11 ip11 ip11 ip11'
+    'ipxr ipxr ipxr ipxr ipxr ipxr ipxr'
+    'ip8 ip8 ip8 ip8 ip8 ip8 ip8'
+    's10e s10e s10e s10e s10e s10e s10e'
+    'A50 A50 A50 A50 A50 A50 A50'
+    ;
     
 
     grid-gap: 10px;
@@ -124,5 +149,10 @@ overflow: auto;}
     max-height: 100%;
     min-height: 70%;
     */
-
+}
+.Green{
+  color: greenyellow
+}
+.Red{
+  color: tomato
 }
