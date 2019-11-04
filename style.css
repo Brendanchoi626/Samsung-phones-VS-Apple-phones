@@ -1,17 +1,26 @@
 /* Style the header */
+
 .Heading {
     background-color: grey;
     padding: 20px;
     text-align: center;
-    max-width: 90%;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
+  }
+body{
+  background-color: whitesmoke;
+  font-family: 'Montserrat';
+  
+}
+  .score{
+    text-align: center;
   }
   .heading{
     background-color: grey;
     padding: 20px;
     text-align: left;
-    max-width: 90%;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -38,7 +47,8 @@
   /*index*/
 .item1 {grid-area: l;}
 .item2 {grid-area: m;}
-.item3 {grid-area: r;}
+.item3 {grid-area: r;height:600px;width:280px;border:1px solid #ccc;
+overflow: auto;}
 .item4 {grid-area: h;text-align: center; background-color: grey;}
 .item5 {grid-area: bl;}
 .item6 {grid-area: br;background-color: white;}
@@ -53,7 +63,6 @@
     'l l m m m r r'
     'l l m m m r r'
     'l l m m m r r'
-    'l l m m m r r'
     'l l t t t r r'
     'h h h h h h h'
     'bl bl bl br br br br'
@@ -64,9 +73,10 @@
     
 
     grid-gap: 10px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 10px;
-    max-width: 90%;
+    max-width: 1300px;
+    object-fit: scale-down;
     margin-right: auto;
     margin-left: auto;
   }
@@ -74,24 +84,26 @@
 .item9 {grid-area: i; background-color: white}
 .item10 {grid-area: s; background-color: white}
 .pandc {grid-area: T; text-align: center; padding: 14px 16px; background-color: white}
+.pnc {grid-area: pnc;}
 .grid{
     display: grid;
     grid-template-areas: 
-    'T T T T T T'
-    'i i i s s s';
+    'pnc pnc'
+    'T T'
+    'i s';
     grid-gap: 10px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 10px;
-    max-width: 90%;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
   }
 
 .compare{
   grid-gap: 10px;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 10px;
-  max-width: 90%;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
 }
